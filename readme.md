@@ -17,6 +17,7 @@ You just need to use the venv module to create a virtual environment, activate i
 open a terminal in the root directory of your project.
 
 you can copy the content of server.py file or `git clone `
+
 1.[create and activate the virtual environment]
 
 ```
@@ -35,7 +36,9 @@ python3 server.py
 
 open your browser in localhost:3000. 
 You can modify port in server.py : 
-`server.serve(root='.', host='0.0.0.0', port=3000)`
+```
+server.serve(root='.', host='0.0.0.0', port=3000)
+```
 and add more extensions files in watch_directories function.
 example: `server.watch(os.path.join(subdir, dir_name, '*.svg'))`
 
